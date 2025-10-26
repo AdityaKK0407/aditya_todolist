@@ -1,0 +1,166 @@
+body {
+    font-family: sans-serif;
+    background-color: #efeded;
+}
+
+input {
+    padding: 0.6rem;
+    font-family: inherit;
+    border-radius: 5px;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+.heading {
+    text-align: center;
+    margin: 30px 5px 17px 5px
+}
+
+.todos {
+    text-align: center;
+    height: 30px;
+    padding: 10px;
+    margin-bottom: 80px;
+}
+
+.tasks {
+    text-align: center;
+    padding: 10px;
+    margin: 10px 15px 35px 15px;
+}
+
+.todos input {
+    font-size: larger;
+    width: 275px;
+}
+
+.todoButton {
+    background-color: hsl(120, 79%, 43%, 0.65);
+    color: #000000;
+    font-size: medium;
+    width: 80px;
+    height: 40px;
+    border-radius: 6px;
+    display: inline;
+}
+
+.todoButton:hover {
+    background-color: hsl(120, 79%, 43%, 0.5);
+}
+
+.todoButton:active {
+    background-color: hsl(120, 79%, 43%, 0.9);
+}
+
+.clearTask {
+    background-color: rgba(249, 57, 57, 0.75);
+    color: #000000;
+    font-size: medium;
+    width: 70px;
+    height: 40px;
+    border-radius: 6px;
+}
+
+.clearTask:hover {
+    background-color: rgba(249, 57, 57, 0.6);
+}
+
+.clearTask:active {
+    background-color: rgba(249, 57, 57, 0.9);
+}
+
+.tasks input {
+    font-size: large;
+}
+
+.tasks button {
+    background-color: #61ea61;
+    color: #000000;
+    font-size: medium;
+    width: 55px;
+    height: 40px;
+    border-radius: 6px;
+}
+
+.tasks button:hover {
+    background-color: hsla(120, 79%, 43%, 0.6);
+}
+
+.tasks button:active {
+    background-color: hsla(120, 79%, 43%, 1);
+}
+
+.task {
+    background-color: rgba(245, 244, 174, 0.76);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin: 10px auto;
+    width: 100%;
+    max-width: 470px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.task input {
+    font-size: large;
+    font-family: "Arial Black", sans-serif;
+    margin-left: 10px;
+}
+
+.update-btn {
+    background-color: blue;
+    color: white;
+    border-radius: 6px;
+    width: 70px;
+    height: 30px;
+    border-color: white;
+    margin: 3px 10px 3px 10px;
+}
+
+.update-btn:hover {
+    background-color: hsl(200, 79%, 43%, 1);
+}
+
+.update-btn:active {
+    background-color: hsla(200, 89%, 33%, 1);
+}
+
+.save-btn {
+    background-color: green;
+    color: white;
+    border-radius: 6px;
+    width: 70px;
+    height: 30px;
+    margin: 3px;
+    border-color: white;
+}
+
+.save-btn:hover {
+    background-color: hsl(120, 85%, 53%, 0.6);
+}
+
+.save-btn:active {
+    background-color: hsla(120, 89%, 33%, 1);
+}
+
+.remove-btn {
+    background-color: red;
+    color: white;
+    border-radius: 6px;
+    width: 70px;
+    height: 30px;
+    border-color: white;
+}
+
+.remove-btn:hover {
+    background-color: hsla(0, 90%, 53%, 0.7);
+}
+
+.remove-btn:active {
+    background-color: hsla(0, 100%, 43%, 0.8);
+}

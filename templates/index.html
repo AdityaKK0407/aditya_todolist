@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <title>TodoList</title>
+</head>
+<body>
+<h1 class="heading">Todo List</h1>
+
+<form id="todos" class="todos" method="post" autocomplete="off">
+    <label>
+        <input type="text" placeholder="Select Todo List" value="" id="todolist" required>
+        <button class="todoButton" type="submit">Select</button>
+        <button id="clearTask" class="clearTask" type="button">Clear</button>
+    </label>
+</form>
+
+<h2 id="heading" class="heading">Tasks</h2>
+
+<form id="tasks" class="tasks" method="post" autocomplete="off">
+    <label>
+        <input type="text" placeholder="Task" id="taskInput" required disabled>
+        <button type="submit">Add</button>
+    </label>
+</form>
+
+<div id="task-list" class="task-list"></div>
+<script src="../static/script.js"></script>
+</body>
+</html>
