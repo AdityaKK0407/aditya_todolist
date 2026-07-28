@@ -32,7 +32,7 @@ func fileAppend(file string, length int, data string) error {
 		}
 	}(f)
 
-	_, err = f.WriteString(fmt.Sprintf("%d: %s\n", length, data))
+	_, err = fmt.Fprintf(f, "%d: %s\n", length, data)
 	if err != nil {
 		return err
 	}

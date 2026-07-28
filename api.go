@@ -37,11 +37,6 @@ func setApi() error {
 }
 
 func (l *Todolist) loadTask(w http.ResponseWriter, r *http.Request) {
-	if r.Method != http.MethodPost {
-		http.Error(w, "Only POST allowed", http.StatusMethodNotAllowed)
-		return
-	}
-
 	var task Task
 
 	if err := json.NewDecoder(r.Body).Decode(&task); err != nil {
@@ -67,11 +62,6 @@ func (l *Todolist) loadTask(w http.ResponseWriter, r *http.Request) {
 }
 
 func (l *Todolist) addTaskUI(w http.ResponseWriter, r *http.Request) {
-	if r.Method != http.MethodPost {
-		http.Error(w, "Only POST allowed", http.StatusMethodNotAllowed)
-		return
-	}
-
 	var task Task
 
 	if err := json.NewDecoder(r.Body).Decode(&task); err != nil {
@@ -89,11 +79,6 @@ func (l *Todolist) addTaskUI(w http.ResponseWriter, r *http.Request) {
 }
 
 func (l *Todolist) removeTaskUI(w http.ResponseWriter, r *http.Request) {
-	if r.Method != http.MethodDelete {
-		http.Error(w, "Only DELETE allowed", http.StatusMethodNotAllowed)
-		return
-	}
-
 	var task Task
 
 	if err := json.NewDecoder(r.Body).Decode(&task); err != nil {
@@ -105,11 +90,6 @@ func (l *Todolist) removeTaskUI(w http.ResponseWriter, r *http.Request) {
 }
 
 func (l *Todolist) updateTaskUI(w http.ResponseWriter, r *http.Request) {
-	if r.Method != http.MethodPut {
-		http.Error(w, "Only PUT allowed", http.StatusMethodNotAllowed)
-		return
-	}
-
 	var task Task
 
 	if err := json.NewDecoder(r.Body).Decode(&task); err != nil {
@@ -120,9 +100,5 @@ func (l *Todolist) updateTaskUI(w http.ResponseWriter, r *http.Request) {
 }
 
 func (l *Todolist) clearSelection(w http.ResponseWriter, r *http.Request) {
-	if r.Method != http.MethodDelete {
-		http.Error(w, "Only POST allowed", http.StatusMethodNotAllowed)
-		return
-	}
 	l.clearTask()
 }
